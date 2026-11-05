@@ -15,10 +15,9 @@ My working environment is defined as code, rebuilt the same way every time, and 
 ## Control mapping
 | Control | How it's met |
 |---|---|
-| CM-2 Baseline Configuration | The dev container is the documented baseline for the workbench, and the versions it installed are recorded in evidence |
-| CM-3 Configuration Change Control | Every change to the workbench is a Git commit with an author, a time and a reason. That is the record of changes; on a team, a reviewed pull request would add the approval |
-| SI-7 Software, Firmware, and Information Integrity | Trivy and kind are checked against a known SHA-256 checksum before they install; a mismatch stops the install |
-| SR-3 Supply Chain Controls and Processes | The security tools are pinned to exact versions from a known-safe release, so a new release can't reach the workbench without a change in Git |
+| CM-2 Baseline Configuration | The dev container is the documented, reproducible baseline for the workbench |
+| CM-3 Configuration Change Control | Every change to the workbench is a Git commit with an author, a time and a reason |
+| SR-3 Supply Chain Controls and Processes | Security tools are pinned to exact versions and checksum-verified; a mismatch stops the install |
 
 ## Evidence
 | File | Shows |
@@ -30,7 +29,7 @@ My working environment is defined as code, rebuilt the same way every time, and 
 ## Labs
 | Lab | What it proves | NIST 800-53 |
 |---|---|---|
-| 01 Vulnerability scanning | Coming next | RA-5, SI-2, SA-11, CM-8, SR-3 |
+| [01 Vulnerability scanning](01-vuln-scanning/) | Image and IaC scanning, SBOMs, and a CI gate that blocks critical CVEs | RA-5, SI-2, SA-11, CM-8, SR-3 |
 | 02 Kubernetes policy | Planned | |
 | 03 IAM least privilege | Planned | |
 | 04 AWS detection | Planned | |
