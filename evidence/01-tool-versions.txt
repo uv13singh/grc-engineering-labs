@@ -1,0 +1,10 @@
+Thu Nov  5 04:13:38 PM UTC 2026
+Docker version 29.9.3-1, build 5457199aa57c45e990c59c89cab5f02b817238d7
+Terraform v1.17.1
+on linux_amd64
+
+aws-cli/2.39.4 Python/3.14.8 Linux/6.8.0-1064-azure exe/x86_64.ubuntu.24
+Client Version: v1.37.2
+Kustomize Version: v5.8.1
+Version: 0.69.3
+kind v0.33.0 go1.26.7 linux/amd64
